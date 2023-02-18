@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LibraryManager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Library Management system</h1>
+  <form>
+    <label for="book-name">Book Name</label>
+    <input type="text" id="book-name">
+    <br>
+    <br>
+    <label for="issued-to">Issued To &nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="issued-to">
+    <br>
+    <br>
+    <button type="button" onclick="addIssuedBook()">Issue Book</button>
+  </form>
+  <br>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Book Name</th>
+        <th>Issued To</th>
+        <th>Issued Date and Time</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="issued-books">
+    </tbody>
+  </table>
+  
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
