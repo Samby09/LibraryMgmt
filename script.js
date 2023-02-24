@@ -45,6 +45,7 @@ function displayIssuedBooks() {
     statusSelect.value = book.status;
     statusSelect.addEventListener("change", function() {
       book.status = this.value;
+      statusText.textContent = book.status;
       updateStatusColor(statusText, book.status);
     });
     const statusText = document.createElement("span");
